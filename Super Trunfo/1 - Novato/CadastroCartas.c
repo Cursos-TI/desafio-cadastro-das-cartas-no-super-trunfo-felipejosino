@@ -28,23 +28,23 @@ int main() {
     printf("+------------------------------------------------------------------------------------------------------------------------------------------+\n");
     printf("|A seguir preencha os dados de cada cidade:  | Atenção: Código da cidade composto por 1 letra[A a H] e 1 número de 1 a 4. Ex:. A01, A02 ...|\n");
     printf("+------------------------------------------------------------------------------------------------------------------------------------------+\n");
-    printf("|Informe o Código da cidade:                 |");
+    printf("|Informe o Código da cidade:             ");
     scanf("\n %s", &codigo);
     printf("+--------------------------------------------+\n");
 
-    printf("Informe a população(mi) do cidade:           |");
+    printf("Informe a população(mi) do cidade:       ");
     scanf("\n %d", &populacao);
     printf("+--------------------------------------------+\n");
 
-    printf("|Informe Área(km²) cidade:                   |");
+    printf("|Informe Área(km²) cidade:               ");
     scanf("\n %f", &area);
     printf("+--------------------------------------------+\n");
 
-    printf("|Informe o PIB(mi) da cidade:                |");
+    printf("|Informe o PIB(mi) da cidade:            ");
     scanf("\n %f", &pib);
     printf("+--------------------------------------------+\n");
     
-    printf("|Informe o números de pontos turísticos:     |");
+    printf("|Informe o números de pontos turísticos: ");
     scanf("\n %d", &pontosTuristicos);
     printf("+--------------------------------------------+\n");
 
