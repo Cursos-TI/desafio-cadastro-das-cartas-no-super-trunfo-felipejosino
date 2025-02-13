@@ -42,7 +42,7 @@ int main() {
     scanf("\n %s", &nomeCidade);
     printf("+--------------------------------------------------------+\n");
 
-    printf("Informe a população(mi) da cidade           :    ");
+    printf("Informe a população da cidade               :    ");
     scanf("\n %d", &populacao);
     printf("+--------------------------------------------------------+\n");
 
