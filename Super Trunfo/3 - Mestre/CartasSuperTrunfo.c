@@ -78,7 +78,7 @@ int main() {
     // scanf("\n %lf", &areaY);
     // printf("+--------------------------------------------------------+\n");
 
-    // printf("|Informe o PIB(mi) da cidade                :   ");
+    // printf("|Informe o PIB da cidade                    :   ");
     // scanf("\n %lf", &pibY);
     // printf("+--------------------------------------------------------+\n");
     
@@ -89,67 +89,73 @@ int main() {
     // printf("+--------------------------------------------------------+\n\n");
 
     // //Operações
-    // //Primeira carta
-    // densidadePopulacionalX = (double) populacaoX / areaX;
-    // pibPerCapitaX = (double) pibX / populacaoX;
-    // superPoderX = (double) populacaoX + areaX + pibX + pontosTuristicosX + densidadePopulacionalX + pibPerCapitaX;
-    // //Segunda carta
-    // densidadePopulacionalY = (double) populacaoY / areaY;
-    // pibPerCapitaY = (double) pibY / populacaoY;
-    // superPoderY = (double) populacaoY + areaY + pibY + pontosTuristicosY + densidadePopulacionalY + pibPerCapitaY;
+    //     //Primeira carta
+    //     densidadePopulacionalX = (double) populacaoX / areaX;
+    //     pibPerCapitaX = (double) pibX / populacaoX;
+    //     superPoderX = (double) populacaoX + areaX + pibX + pontosTuristicosX + densidadePopulacionalX + pibPerCapitaX;
+        
+    //     //Segunda carta
+    //     densidadePopulacionalY = (double) populacaoY / areaY;
+    //     pibPerCapitaY = (double) pibY / populacaoY;
+    //     superPoderY = (double) populacaoY + areaY + pibY + pontosTuristicosY + densidadePopulacionalY + pibPerCapitaY;
 
     // printf("Cadastro realizado com sucesso!\n");
 
-    // Exibição dos Dados da primeira Carta:
-    printf("\n");
-    printf("+---------------------------------------------------------------------+\n"               );
-    printf("|--------------------Informações da primeira carta--------------------|\n"               );
-    printf("+--------------------------------+------------------------------------+\n"               );
-    printf("|Estado                         :| %c                      \n", estadoX                  );
-    printf("|Código da cidade               :| %c%s                    \n", estadoX, codigoX         );
-    printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX              );
-    printf("|População                      :| %ld                     \n", populacaoX               );
-    printf("|Área                           :| %.2lf km²               \n", areaX                    );
-    printf("|Densidade Populacional         :| %.2lf pessoas/km²       \n", densidadePopulacionalX   );
-    printf("|PIB                            :| %.2lf mi reais          \n", pibX                     );
-    printf("|PIB per Capita                 :| %.2lf reais             \n", pibPerCapitaX            );
-    printf("|Números de Pontos Turísticos   :| %d                      \n", pontosTuristicosX        );
-    printf("+--------------------------------+------------------------------------+\n"               );
-    printf("|*Super Poder                   :| %2lf                    \n", superPoderX              );
-    printf("+--------------------------------+------------------------------------+\n"             );
+    // // Exibição dos Dados da primeira Carta:
+    // printf("\n");
+    // printf("+---------------------------------------------------------------------+\n"               );
+    // printf("|--------------------Informações da primeira carta--------------------|\n"               );
+    // printf("+--------------------------------+------------------------------------+\n"               );
+    // printf("|Estado                         :| %c                      \n", estadoX                  );
+    // printf("|Código da cidade               :| %c%s                    \n", estadoX, codigoX         );
+    // printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX              );
+    // printf("|População                      :| %ld                     \n", populacaoX               );
+    // printf("|Área                           :| %.2lf km²               \n", areaX                    );
+    // printf("|Densidade Populacional         :| %.2lf pessoas/km²       \n", densidadePopulacionalX   );
+    // printf("|PIB                            :| %.2lf reais             \n", pibX                     );
+    // printf("|PIB per Capita                 :| %.2lf reais             \n", pibPerCapitaX            );
+    // printf("|Números de Pontos Turísticos   :| %d                      \n", pontosTuristicosX        );
+    // printf("+--------------------------------+------------------------------------+\n"               );
+    // printf("|*Super Poder                   :| %2lf                    \n", superPoderX              );
+    // printf("+--------------------------------+------------------------------------+\n"               );
 
-     // Exibição dos Dados da segunda Carta:
-     printf("\n");
-     printf("+---------------------------------------------------------------------+\n"               );
-     printf("|--------------------Informações da segunda carta---------------------|\n"               );
-     printf("+--------------------------------+------------------------------------+\n"               );
-     printf("|Estado                         :| %c                      \n", estadoY                  );
-     printf("|Código da cidade               :| %c%s                    \n", estadoY, codigoY         );
-     printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY              );
-     printf("|População                      :| %ld                     \n", populacaoY               );
-     printf("|Área                           :| %.2lf km²               \n", areaY                    );
-     printf("|Densidade Populacional         :| %.2lf pessoas/km²       \n", densidadePopulacionalY   );
-     printf("|PIB                            :| %.2lf mi reais          \n", pibY                     );
-     printf("|PIB per Capita                 :| %.2lf reais             \n", pibPerCapitaY            );
-     printf("|Números de Pontos Turísticos   :| %d                      \n", pontosTuristicosY        );
-     printf("+--------------------------------+------------------------------------+\n"               );
-     printf("|*Super Poder                   :| %2lf                    \n", superPoderY              );
-     printf("+--------------------------------+------------------------------------+\n"               );
+    //  // Exibição dos Dados da segunda Carta:
+    //  printf("\n");
+    //  printf("+---------------------------------------------------------------------+\n"               );
+    //  printf("|--------------------Informações da segunda carta---------------------|\n"               );
+    //  printf("+--------------------------------+------------------------------------+\n"               );
+    //  printf("|Estado                         :| %c                      \n", estadoY                  );
+    //  printf("|Código da cidade               :| %c%s                    \n", estadoY, codigoY         );
+    //  printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY              );
+    //  printf("|População                      :| %ld                     \n", populacaoY               );
+    //  printf("|Área                           :| %.2lf km²               \n", areaY                    );
+    //  printf("|Densidade Populacional         :| %.2lf pessoas/km²       \n", densidadePopulacionalY   );
+    //  printf("|PIB                            :| %.2lf reais             \n", pibY                     );
+    //  printf("|PIB per Capita                 :| %.2lf reais             \n", pibPerCapitaY            );
+    //  printf("|Números de Pontos Turísticos   :| %d                      \n", pontosTuristicosY        );
+    //  printf("+--------------------------------+------------------------------------+\n"               );
+    //  printf("|*Super Poder                   :| %2lf                    \n", superPoderY              );
+    //  printf("+--------------------------------+------------------------------------+\n"               );
 
      // Exibição dos Dados para comparação:
      printf("\n");
-     printf("+------------------------------------------------------------------------------------------------------------------------------------------+\n");
-     printf("+------------------------------------------------------Informações da primeira carta-------------------------------------------------------+\n");
-     printf("+-------------------------------------------Primeira Carta----------+---------Segunda Carta---------------------Comparação-----------------+\n");
-     printf("|População                      :| %ld                                     %ld                 \n", populacaoX, populacaoY               );
-     printf("|Área                           :| %.2lf km²                               %.2lf km²           \n", areaY                    );
-     printf("|Densidade Populacional         :| %.2lf pessoas/km²                       %.2lf pessoas/km²   \n", densidadePopulacionalY   );
-     printf("|PIB                            :| %.2lf mi reais                          %.2lf mi reais      \n", pibY                     );
-     printf("|PIB per Capita                 :| %.2lf reais                             %.2lf reais         \n", pibPerCapitaY            );
-     printf("|Números de Pontos Turísticos   :| %d                                      %d                  \n", pontosTuristicosY        );
-     printf("+------------------------------------------------------------------------------------------------------------------------------------------+\n");
-     printf("|*Super Poder                   :|                                                                                                          \n", pontosTuristicosY        );
-     printf("+------------------------------------------------------------------------------------------------------------------------------------------+\n");
+     printf("+---------------------------------------------------------------------+\n"                 );                                                 
+     printf("+--------------------------------|---------------Comparação-----------|\n");                                                   
+     printf("+---------------------------------------------------------------------+\n"                 );                                                
+     printf("+--------------------------------|Primeira é maior que Segunda Carta   \n"                                                                                     );
+     printf("|População                      :|                  %d \n", populacaoX, populacaoY, populacaoX > populacaoY                                                    );
+     printf("|Área                           :|                  %d \n", areaX, areaY, areaX > areaY                                                                        );
+     printf("|Densidade Populacional         :|                  %d \n", densidadePopulacionalX, densidadePopulacionalY, densidadePopulacionalX > densidadePopulacionalY    );
+     printf("|PIB                            :|                  %d \n", pibX, pibY, pibX > pibY                                                                            );
+     printf("|PIB per Capita                 :|                  %d \n", pibPerCapitaX, pibPerCapitaY, pibPerCapitaX > pibPerCapitaY                                        );
+     printf("|Números de Pontos Turísticos   :|                  %d \n", pontosTuristicosX, pontosTuristicosY, pontosTuristicosX > pontosTuristicosY                        );
+     printf("+----------------------------------------------------------------------+\n"                ); 
+     printf("|*Super Poder                   :|                  %d \n", superPoderX, superPoderY, superPoderX > superPoderY                                                );
+     printf("+----------------------------------------------------------------------+\n\n"                ); 
+     printf("+------------------------------------------------------------------------------------------------------------------------------------------|\n");
+     printf("+----------------------------------------------------------------ATENÇÃO-------------------------------------------------------------------|\n");
+     printf("+ *Resultado da comparação for 1, a PRIMEIRA ganhou; se o resultado for 0, a SEGUNDA carta ganhou------------------------------------------|\n");
+     printf("+------------------------------------------------------------------------------------------------------------------------------------------|\n");
 
     printf("\n\n\n");
 
