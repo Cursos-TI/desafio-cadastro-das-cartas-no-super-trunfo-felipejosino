@@ -22,7 +22,7 @@ int main() {
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     printf("+------------------------------------------------------------------------------------------------------------------------------------------+\n");
-    printf("|A seguir preencha os dados de cada cidade:  | Atenção: Carta será idendificada por 1 letra[A a H] e 1 número de 1 a 4. Ex:. A01, A02 ...  |\n");
+    printf("|A seguir preencha os dados de cada cidade:  | Atenção: Carta será idendificada por 1 letra[A a H] e 1 número de 1 a 4. Ex:. A01, A02 ...  |\n\n");
 
     //Dados da primeira carta
     printf("+-----------------------------------------------------------Primeira Carta-----------------------------------------------------------------+\n");
@@ -88,9 +88,7 @@ int main() {
     scanf("\n %d", &pontosTuristicosY);
     printf("+--------------------------------------------------------+\n\n");
 
-    printf("+--------------------------------------------------------+\n\n");
-
-    printf("Cadastro realizado com sucesso!\n");
+    printf("Cadastro realizado com sucesso!\n\n\n");
 
     //Operações
         //Primeira carta
@@ -118,7 +116,7 @@ int main() {
     printf("|PIB per Capita                 :| %.2lf reais             \n", pibPerCapitaX            );
     printf("|Números de Pontos Turísticos   :| %d                      \n", pontosTuristicosX        );
     printf("+--------------------------------+------------------------------------+\n"               );
-    printf("|*Super Poder                   :| %2lf                    \n", superPoderX              );
+    printf("|*Super Poder                   :| %.2lf                    \n", superPoderX              );
     printf("+--------------------------------+------------------------------------+\n"               );
 
      // Exibição dos Dados da segunda Carta:
@@ -136,7 +134,7 @@ int main() {
      printf("|PIB per Capita                 :| %.2lf reais             \n", pibPerCapitaY            );
      printf("|Números de Pontos Turísticos   :| %d                      \n", pontosTuristicosY        );
      printf("+--------------------------------+------------------------------------+\n"               );
-     printf("|*Super Poder                   :| %2lf                    \n", superPoderY              );
+     printf("|*Super Poder                   :| %.2lf                    \n", superPoderY              );
      printf("+--------------------------------+------------------------------------+\n"               );
 
      // Exibição dos Dados para comparação:
@@ -156,7 +154,7 @@ int main() {
      printf("+----------------------------------------------------------------------+\n\n"                ); 
      printf("+------------------------------------------------------------------------------------------------------------------------------------------|\n");
      printf("+----------------------------------------------------------------ATENÇÃO-------------------------------------------------------------------|\n");
-     printf("+ *Resultado da comparação for 1, a PRIMEIRA ganhou; se o resultado for 0, a SEGUNDA carta ganhou------------------------------------------|\n");
+     printf("+ *Resultado da comparação for 1, a PRIMEIRA carta ganhou; se o resultado for 0, a SEGUNDA ganhou------------------------------------------|\n");
      printf("+------------------------------------------------------------------------------------------------------------------------------------------|\n");
 
     printf("\n\n\n");
