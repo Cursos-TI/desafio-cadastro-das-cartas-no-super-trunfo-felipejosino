@@ -17,7 +17,7 @@ int main() {
     printf("|Desafio Super Trunfo - Países|\n");
     printf("+-----------------------------+\n\n");
 
-    printf("| Cadastro das Cartas         |\n");
+    printf("|     Cadastro das Cartas     |\n");
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -55,6 +55,8 @@ int main() {
     scanf("\n %d", &pontosTuristicosX);
     printf("+--------------------------------------------------------+\n");
 
+    printf("Cadastro realizado com sucesso!\n\n");
+
     //Dados segunda carta
     printf("+-----------------------------------------------------------Segunda Carta------------------------------------------------------------------+\n");
     printf("+------------------------------------------------------------------------------------------------------------------------------------------+\n");
@@ -88,6 +90,8 @@ int main() {
 
     printf("+--------------------------------------------------------+\n\n");
 
+    printf("Cadastro realizado com sucesso!\n");
+
     //Operações
         //Primeira carta
         densidadePopulacionalX = (double) populacaoX / areaX;
@@ -98,8 +102,6 @@ int main() {
         densidadePopulacionalY = (double) populacaoY / areaY;
         pibPerCapitaY = (double) pibY / populacaoY;
         superPoderY = (double) populacaoY + areaY + pibY + pontosTuristicosY + densidadePopulacionalY + pibPerCapitaY;
-
-    printf("Cadastro realizado com sucesso!\n");
 
     // Exibição dos Dados da primeira Carta:
     printf("\n");
@@ -143,14 +145,14 @@ int main() {
      printf("+--------------------------------|---------------Comparação-----------|\n");                                                   
      printf("+---------------------------------------------------------------------+\n"                 );                                                
      printf("+--------------------------------|Primeira é maior que Segunda Carta   \n"                                                                                     );
-     printf("|População                      :|                  %d \n", populacaoX, populacaoY, populacaoX > populacaoY                                                    );
-     printf("|Área                           :|                  %d \n", areaX, areaY, areaX > areaY                                                                        );
-     printf("|Densidade Populacional         :|                  %d \n", densidadePopulacionalX, densidadePopulacionalY, densidadePopulacionalX > densidadePopulacionalY    );
-     printf("|PIB                            :|                  %d \n", pibX, pibY, pibX > pibY                                                                            );
-     printf("|PIB per Capita                 :|                  %d \n", pibPerCapitaX, pibPerCapitaY, pibPerCapitaX > pibPerCapitaY                                        );
-     printf("|Números de Pontos Turísticos   :|                  %d \n", pontosTuristicosX, pontosTuristicosY, pontosTuristicosX > pontosTuristicosY                        );
+     printf("|População                      :|                  %d \n", populacaoX > populacaoY                                                    );
+     printf("|Área                           :|                  %d \n", areaX > areaY                                                                        );
+     printf("|Densidade Populacional         :|                  %d \n", densidadePopulacionalX > densidadePopulacionalY    );
+     printf("|PIB                            :|                  %d \n", pibX > pibY                                                                            );
+     printf("|PIB per Capita                 :|                  %d \n", pibPerCapitaX > pibPerCapitaY                                        );
+     printf("|Números de Pontos Turísticos   :|                  %d \n", pontosTuristicosX > pontosTuristicosY                        );
      printf("+----------------------------------------------------------------------+\n"                ); 
-     printf("|*Super Poder                   :|                  %d \n", superPoderX, superPoderY, superPoderX > superPoderY                                                );
+     printf("|*Super Poder                   :|                  %d \n", superPoderX > superPoderY                                                );
      printf("+----------------------------------------------------------------------+\n\n"                ); 
      printf("+------------------------------------------------------------------------------------------------------------------------------------------|\n");
      printf("+----------------------------------------------------------------ATENÇÃO-------------------------------------------------------------------|\n");
