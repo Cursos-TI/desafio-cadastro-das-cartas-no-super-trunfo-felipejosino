@@ -162,27 +162,48 @@ int main() {
     // Exibição dos Dados para comparação Hardcode : (Tema02)
     //Comparação que ganhar soma +1 na contagem das variaveis. Total de pontos dessa variável vai decidir quem com mais contagem de pontos ganha!
 
-    if(pontosTuristicosX > pontosTuristicosY)           { contagemPontosCartaX++; } else { contagemPontosCartaY++; }
-    if(areaX > areaY)                                   { contagemPontosCartaX++; } else { contagemPontosCartaY++; }
-    if(densidadePopulacionalX < densidadePopulacionalY) { contagemPontosCartaX++; } else { contagemPontosCartaY++; }
-    if(pibX > pibY)                                     { contagemPontosCartaX++; } else { contagemPontosCartaY++; }
-    if(pibPerCapitaX > pibPerCapitaY)                   { contagemPontosCartaX++; } else { contagemPontosCartaY++; }
-    if(pontosTuristicosX > pontosTuristicosY)           { contagemPontosCartaX++; } else { contagemPontosCartaY++; }
-    if(superPoderX > superPoderY)                       { contagemPontosCartaX++; } else { contagemPontosCartaY++; }
+    if(populacaoX > populacaoY)                         { printf("p +1"); contagemPontosCartaX++; } else if(populacaoX == populacaoY)                           {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
+    if(areaX > areaY)                                   { printf("p +1"); contagemPontosCartaX++; } else if(areaX == areaY)                                     {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
+    if(densidadePopulacionalX < densidadePopulacionalY) { printf("p +1"); contagemPontosCartaX++; } else if(densidadePopulacionalX == densidadePopulacionalY)   {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
+    if(pibX > pibY)                                     { printf("p +1"); contagemPontosCartaX++; } else if(pibX == pibY)                                       {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
+    if(pibPerCapitaX > pibPerCapitaY)                   { printf("p +1"); contagemPontosCartaX++; } else if(pibPerCapitaX == pibPerCapitaY)                     {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
+    if(pontosTuristicosX > pontosTuristicosY)           { printf("p +1"); contagemPontosCartaX++; } else if(pontosTuristicosX == pontosTuristicosY)             {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
+    if(superPoderX > superPoderY)                       { printf("p +1"); contagemPontosCartaX++; } else if(superPoderX == superPoderY)                         {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
 
     printf("+-----------------------+\n");
     printf("|---Carta Ganhadora é---|\n\n");
 
+    //Condição Contagem
     if(contagemPontosCartaX > contagemPontosCartaY){
         printf("|***  PRIMEIRA CARTA ***|\n");
+
+    }else if(contagemPontosCartaX == contagemPontosCartaY){
+        //Caso de empate o fator de desempate é atributo SUPER PODER
+        printf("+-------------------------------------------------+\n");
+        printf("|                    Empate!                      |\n");
+        printf("|Critério de desempate é atributo * Super Poder * |\n");
+        printf("+-------------------------------------------------+\n");
+
+        if(superPoderX > superPoderY){
+            printf("|***  PRIMEIRA CARTA ***|\n");
+        }else if(superPoderX == superPoderY){
+            // Se super poder for igual, empate técnico
+            printf("\n\n|*** EMPATE! Os valores atributo Super Poder são iguais ***|\n\n");
+        }else {
+            printf("|***  SEGUNDA CARTA ***|\n");
+        }
+
     }else{
         printf("|***  SEGUNDA CARTA ***|\n");
     }
+
+    printf("+--------------------------------------------------------------------------------------------------------+\n");
+    printf("Contagem de pontos Primeira Carta %d e Segunda Carta %d \n", contagemPontosCartaX, contagemPontosCartaY);
+    printf("+--------------------------------------------------------------------------------------------------------+\n");
     
-    printf("Contagem de pontos Primeira Carta %d e Segunda Carta %d", contagemPontosCartaX, contagemPontosCartaY);
+    printf("+Atenção: comparação é entre todos os atributos das cartas!+\n");
+    printf("+----------------------------------------------------------+\n");
 
-
-    printf("\n\n\n");
 
     return 0;
 }
