@@ -162,13 +162,13 @@ int main() {
     // Exibição dos Dados para comparação Hardcode : (Tema02)
     //Comparação que ganhar soma +1 na contagem das variaveis. Total de pontos dessa variável vai decidir quem com mais contagem de pontos ganha!
 
-    if(populacaoX > populacaoY)                         { printf("p +1"); contagemPontosCartaX++; } else if(populacaoX == populacaoY)                           {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
-    if(areaX > areaY)                                   { printf("p +1"); contagemPontosCartaX++; } else if(areaX == areaY)                                     {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
-    if(densidadePopulacionalX < densidadePopulacionalY) { printf("p +1"); contagemPontosCartaX++; } else if(densidadePopulacionalX == densidadePopulacionalY)   {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
-    if(pibX > pibY)                                     { printf("p +1"); contagemPontosCartaX++; } else if(pibX == pibY)                                       {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
-    if(pibPerCapitaX > pibPerCapitaY)                   { printf("p +1"); contagemPontosCartaX++; } else if(pibPerCapitaX == pibPerCapitaY)                     {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
-    if(pontosTuristicosX > pontosTuristicosY)           { printf("p +1"); contagemPontosCartaX++; } else if(pontosTuristicosX == pontosTuristicosY)             {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
-    if(superPoderX > superPoderY)                       { printf("p +1"); contagemPontosCartaX++; } else if(superPoderX == superPoderY)                         {printf("e");/* EMPATE*/} else { printf("s +1"); contagemPontosCartaY++; }
+    if(populacaoX > populacaoY)                         { contagemPontosCartaX++; } else if(populacaoX == populacaoY)                           {/* EMPATE*/} else {  contagemPontosCartaY++; }
+    if(areaX > areaY)                                   { contagemPontosCartaX++; } else if(areaX == areaY)                                     {/* EMPATE*/} else {  contagemPontosCartaY++; }
+    if(densidadePopulacionalX < densidadePopulacionalY) { contagemPontosCartaX++; } else if(densidadePopulacionalX == densidadePopulacionalY)   {/* EMPATE*/} else {  contagemPontosCartaY++; }
+    if(pibX > pibY)                                     { contagemPontosCartaX++; } else if(pibX == pibY)                                       {/* EMPATE*/} else {  contagemPontosCartaY++; }
+    if(pibPerCapitaX > pibPerCapitaY)                   { contagemPontosCartaX++; } else if(pibPerCapitaX == pibPerCapitaY)                     {/* EMPATE*/} else {  contagemPontosCartaY++; }
+    if(pontosTuristicosX > pontosTuristicosY)           { contagemPontosCartaX++; } else if(pontosTuristicosX == pontosTuristicosY)             {/* EMPATE*/} else {  contagemPontosCartaY++; }
+    if(superPoderX > superPoderY)                       { contagemPontosCartaX++; } else if(superPoderX == superPoderY)                         {/* EMPATE*/} else {  contagemPontosCartaY++; }
 
     printf("+-----------------------+\n");
     printf("|---Carta Ganhadora é---|\n\n");
