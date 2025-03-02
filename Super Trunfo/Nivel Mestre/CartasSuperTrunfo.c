@@ -116,7 +116,7 @@ int main() {
     printf("| ( 7 ) - Super Poder                           |\n");
     printf("+-----------------------------------------------+\n");
 
-    printf("*** Escolha 2 atributos diferentes para comparação das cartas! *** \n");
+    printf("*** Escolha 2 atributos diferentes para comparação das cartas! *** \n\n");
 
     printf("|Selecione número do primeiro atributo:");
     scanf("%d", &atributoDeComparacao);
@@ -169,6 +169,10 @@ int main() {
 
     printf("\n");
 
+    printf("+---------------------------------------------------------------------+\n"               );
+    printf("+--------------------Primeiro Atributo de comparação------------------+\n"               );
+    printf("+---------------------------------------------------------------------+\n"               );
+
     switch (atributoDeComparacao)
     {
     case 1:
@@ -176,14 +180,14 @@ int main() {
         printf("                      Você escolheu População                       \n\n");
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                    Primeira Carta para comparação                   \n"                );
+        printf("               Dados da Primeira Carta para comparação               \n"                );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                                \n", nomeCidadeX   );
         printf("|População                      :| %ld                               \n\n", populacaoX  );
         printf("+-------------------------------------------------------------------+\n"                );
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                    Segunda Carta para comparação                    \n"                 );
+        printf("               Dados da Segunda Carta para comparação                \n"                 );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                                \n", nomeCidadeY    );
         printf("|População                      :| %ld                               \n", populacaoY     );
@@ -191,16 +195,16 @@ int main() {
 
         if(populacaoX > populacaoY){ 
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Primeira Carta Venceu!                        \n\n"    );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
             printf("+-------------------------------------------------------------------+\n"                );
 
         } else if(populacaoX == populacaoY){
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                               Empate!                               \n\n"    );
+            printf("                               Empate!                               \n\n"              );
             printf("+-------------------------------------------------------------------+\n"                );
         } else {  
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                        Segunda Carta Venceu!                        \n\n"    );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
             printf("+-------------------------------------------------------------------+\n"                );
         }
 
@@ -209,14 +213,14 @@ int main() {
         printf("|                         Você escolheu Área                         |\n");
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                    Primeira Carta para comparação                   \n"              );
+        printf("               Dados da Primeira Carta para comparação               \n"              );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                               \n", nomeCidadeX );
         printf("|Área                           :| %.2lf                            \n\n", areaX );
         printf("+-------------------------------------------------------------------+\n"                );
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                    Segunda Carta para comparação                    \n"              );
+        printf("               Dados da Segunda Carta para comparação                \n"              );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY );
         printf("|Área                           :| %.2lf                   \n", areaY       );
@@ -224,7 +228,7 @@ int main() {
 
         if(areaX > areaY){ 
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Primeira Carta Venceu!                        \n\n"    );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
             printf("+-------------------------------------------------------------------+\n"                );
 
         } else if(areaX == areaY){
@@ -233,7 +237,7 @@ int main() {
             printf("+-------------------------------------------------------------------+\n"                );
         } else {  
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Segunda Carta Venceu!                         \n\n"    );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
             printf("+-------------------------------------------------------------------+\n"                );
         }
 
@@ -243,14 +247,14 @@ int main() {
         printf("|               Você escolheu Densidade Populacional                |\n");
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                     Primeira Carta para comparação                  \n"                           );
+        printf("                Dados da Primeira Carta para comparação              \n"                           );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX              );
         printf("|Densidade Populacional         :| %.2lf                   \n\n", densidadePopulacionalX );
         printf("+-------------------------------------------------------------------+\n"                );
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                    Segunda Carta para comparação                    \n"                           );
+        printf("               Dados da Segunda Carta para comparação                \n"                           );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", densidadePopulacionalY   );
         printf("|Densidade Populacional         :| %.2lf                   \n", areaY                    );
@@ -258,7 +262,7 @@ int main() {
 
         if(densidadePopulacionalX < densidadePopulacionalY){ 
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Primeira Carta Venceu!                        \n\n"    );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
             printf("+-------------------------------------------------------------------+\n"                );
 
         } else if(densidadePopulacionalX == densidadePopulacionalY){
@@ -267,7 +271,7 @@ int main() {
             printf("+-------------------------------------------------------------------+\n"                );
         } else {  
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Segunda Carta Venceu!                         \n\n"    );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
             printf("+-------------------------------------------------------------------+\n"                );
         }
 
@@ -276,14 +280,14 @@ int main() {
         printf("|                         Você escolheu PIB                         |\n");
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                    Primeira Carta para comparação                   \n"              );
+        printf("               Dados da Primeira Carta para comparação               \n"              );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX );
         printf("|PIB                            :| %.2lf                   \n\n", pibX );
         printf("+-------------------------------------------------------------------+\n"                );
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                    Segunda Carta para comparação                    \n"              );
+        printf("               Dados da Segunda Carta para comparação                \n"              );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY );
         printf("|PIB                            :| %.2lf                   \n", pibY        );
@@ -291,7 +295,7 @@ int main() {
 
         if(pibX > pibY){ 
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                      Primeira Carta Venceu!                       \n\n"    );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
             printf("+-------------------------------------------------------------------+\n"                );
 
         } else if(pibX == pibY){
@@ -300,7 +304,7 @@ int main() {
             printf("+-------------------------------------------------------------------+\n"                );
         } else {  
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Segunda Carta Venceu!                       \n\n"    );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
             printf("+-------------------------------------------------------------------+\n"                );
         }
 
@@ -309,14 +313,14 @@ int main() {
         printf("|                   Você escolheu PIB per Capita                    |\n");
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                     Primeira Carta para comparação                  \n"              );
+        printf("                Dados da Primeira Carta para comparação              \n"              );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX );
         printf("|PIB per Capita                 :| %.2lf                   \n\n", pibPerCapitaX );
         printf("+-------------------------------------------------------------------+\n"                );
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                    Segunda Carta para comparação                    \n"              );
+        printf("               Dados da Segunda Carta para comparação                \n"              );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY );
         printf("|PIB per Capita                 :| %.2lf                   \n", pibPerCapitaY);
@@ -324,7 +328,7 @@ int main() {
 
         if(pibPerCapitaX > pibPerCapitaY){ 
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Primeira Carta Venceu!                        \n\n"    );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
             printf("+-------------------------------------------------------------------+\n"                );
 
         } else if(pibPerCapitaX == pibPerCapitaY){
@@ -333,7 +337,7 @@ int main() {
             printf("+-------------------------------------------------------------------+\n"                );
         } else {  
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Segunda Carta Venceu!                       \n\n"    );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
             printf("+-------------------------------------------------------------------+\n"                );
         }
 
@@ -342,14 +346,14 @@ int main() {
         printf("|             Você escolheu Números de Pontos Turísticos            |\n");
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                    Primeira Carta para comparação                   \n"              );
+        printf("               Dados da Primeira Carta para comparação               \n"              );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX );
         printf("|Números de Pontos Turísticos   :| %d                      \n\n", pontosTuristicosX );
         printf("+-------------------------------------------------------------------+\n"                );
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                     Segunda Carta para comparação                   \n"              );
+        printf("                Dados da Segunda Carta para comparação               \n"              );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY );
         printf("|Números de Pontos Turísticos   :| %d                      \n", pontosTuristicosY);
@@ -357,7 +361,7 @@ int main() {
 
         if(pontosTuristicosX > pontosTuristicosY){ 
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Primeira Carta Venceu!                        \n\n"    );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
             printf("+-------------------------------------------------------------------+\n"                );
 
         } else if(pontosTuristicosX == pontosTuristicosY){
@@ -366,7 +370,7 @@ int main() {
             printf("+-------------------------------------------------------------------+\n"                );
         } else {  
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Segunda Carta Venceu!                        \n\n"    );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
             printf("+-------------------------------------------------------------------+\n"                );
         }
 
@@ -375,14 +379,14 @@ int main() {
         printf("|                     Você escolheu Super Poder                      |\n");
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                    Primeira Carta para comparação                   \n"              );
+        printf("               Dados da Primeira Carta para comparação               \n"              );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX );
         printf("|Super Poder                    :| %.2lf                      \n\n", superPoderX );
         printf("+-------------------------------------------------------------------+\n"                );
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("                     Segunda Carta para comparação                   \n"              );
+        printf("                Dados da Segunda Carta para comparação               \n"              );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY );
         printf("|Super Poder                    :| %.2lf                      \n", superPoderY);
@@ -390,7 +394,7 @@ int main() {
 
         if(superPoderX > superPoderY){ 
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                       Primeira Carta Venceu!                       \n\n"    );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
             printf("+-------------------------------------------------------------------+\n"                );
 
         } else if(superPoderX == superPoderY){
@@ -399,7 +403,253 @@ int main() {
             printf("+-------------------------------------------------------------------+\n"                );
         } else {  
             printf("+-------------------------------------------------------------------+\n"                );
-            printf("                        Segunda Carta Venceu!                       \n\n"    );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
+            printf("+-------------------------------------------------------------------+\n"                );
+        }
+
+        break;
+    
+    default:
+        printf("|             *** Opção inválida! ***           |\n");
+        return 0;
+        break;
+    }
+
+    printf("+---------------------------------------------------------------------+\n"               );
+    printf("+--------------------Segundo Atributo de comparação-------------------+\n"               );
+    printf("+---------------------------------------------------------------------+\n"               );
+
+    switch (atributoDeComparacao2)
+    {
+    case 1:
+
+        printf("                      Você escolheu População                       \n\n");
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("              Dados da Primeira Carta para comparação                \n"                );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                                \n", nomeCidadeX   );
+        printf("|População                      :| %ld                               \n\n", populacaoX  );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("               Dados da Segunda Carta para comparação                \n"                 );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                                \n", nomeCidadeY    );
+        printf("|População                      :| %ld                               \n", populacaoY     );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        if(populacaoX > populacaoY){ 
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
+            printf("+-------------------------------------------------------------------+\n"                );
+
+        } else if(populacaoX == populacaoY){
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                               Empate!                               \n\n"    );
+            printf("+-------------------------------------------------------------------+\n"                );
+        } else {  
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
+            printf("+-------------------------------------------------------------------+\n"                );
+        }
+
+        break;
+    case 2:
+        printf("|                         Você escolheu Área                         |\n");
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("               Dados da Primeira Carta para comparação               \n"              );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                               \n", nomeCidadeX );
+        printf("|Área                           :| %.2lf                            \n\n", areaX );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("               Dados da Segunda Carta para comparação                \n"              );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY );
+        printf("|Área                           :| %.2lf                   \n", areaY       );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        if(areaX > areaY){ 
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
+            printf("+-------------------------------------------------------------------+\n"                );
+
+        } else if(areaX == areaY){
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                               Empate!                               \n\n"    );
+            printf("+-------------------------------------------------------------------+\n"                );
+        } else {  
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
+            printf("+-------------------------------------------------------------------+\n"                );
+        }
+
+        break;
+    case 3:
+        // menor valor
+        printf("|               Você escolheu Densidade Populacional                |\n");
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("                Dados da Primeira Carta para comparação              \n"                           );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX              );
+        printf("|Densidade Populacional         :| %.2lf                   \n\n", densidadePopulacionalX );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("               Dados da Segunda Carta para comparação                \n"                           );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", densidadePopulacionalY   );
+        printf("|Densidade Populacional         :| %.2lf                   \n", areaY                    );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        if(densidadePopulacionalX < densidadePopulacionalY){ 
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
+            printf("+-------------------------------------------------------------------+\n"                );
+
+        } else if(densidadePopulacionalX == densidadePopulacionalY){
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                               Empate!                               \n\n"    );
+            printf("+-------------------------------------------------------------------+\n"                );
+        } else {  
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
+            printf("+-------------------------------------------------------------------+\n"                );
+        }
+
+        break;
+    case 4:
+        printf("|                         Você escolheu PIB                         |\n");
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("               Dados da Primeira Carta para comparação               \n"              );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX );
+        printf("|PIB                            :| %.2lf                   \n\n", pibX );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("               Dados da Segunda Carta para comparação                \n"              );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY );
+        printf("|PIB                            :| %.2lf                   \n", pibY        );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        if(pibX > pibY){ 
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
+            printf("+-------------------------------------------------------------------+\n"                );
+
+        } else if(pibX == pibY){
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                              Empate!                              \n\n"    );
+            printf("+-------------------------------------------------------------------+\n"                );
+        } else {  
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
+            printf("+-------------------------------------------------------------------+\n"                );
+        }
+
+        break;
+    case 5:
+        printf("|                   Você escolheu PIB per Capita                    |\n");
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("               Dados da  Primeira Carta para comparação              \n"              );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX );
+        printf("|PIB per Capita                 :| %.2lf                   \n\n", pibPerCapitaX );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("               Dados da Segunda Carta para comparação                \n"              );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY );
+        printf("|PIB per Capita                 :| %.2lf                   \n", pibPerCapitaY);
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        if(pibPerCapitaX > pibPerCapitaY){ 
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
+            printf("+-------------------------------------------------------------------+\n"                );
+
+        } else if(pibPerCapitaX == pibPerCapitaY){
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                              Empate!                              \n\n"    );
+            printf("+-------------------------------------------------------------------+\n"                );
+        } else {  
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
+            printf("+-------------------------------------------------------------------+\n"                );
+        }
+
+        break;
+    case 6:
+        printf("|             Você escolheu Números de Pontos Turísticos            |\n");
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("               Dados da Primeira Carta para comparação               \n"              );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX );
+        printf("|Números de Pontos Turísticos   :| %d                      \n\n", pontosTuristicosX );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("                Dados da Segunda Carta para comparação               \n"              );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY );
+        printf("|Números de Pontos Turísticos   :| %d                      \n", pontosTuristicosY);
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        if(pontosTuristicosX > pontosTuristicosY){ 
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
+            printf("+-------------------------------------------------------------------+\n"                );
+
+        } else if(pontosTuristicosX == pontosTuristicosY){
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                               Empate!                              \n\n"    );
+            printf("+-------------------------------------------------------------------+\n"                );
+        } else {  
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
+            printf("+-------------------------------------------------------------------+\n"                );
+        }
+
+        break;
+    case 7:
+        printf("|                     Você escolheu Super Poder                      |\n");
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("               Dados da Primeira Carta para comparação               \n"              );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeX );
+        printf("|Super Poder                    :| %.2lf                      \n\n", superPoderX );
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("                Dados da Segunda Carta para comparação               \n"              );
+        printf("+-------------------------------------------------------------------+\n"                );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY );
+        printf("|Super Poder                    :| %.2lf                      \n", superPoderY);
+        printf("+-------------------------------------------------------------------+\n"                );
+
+        if(superPoderX > superPoderY){ 
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, primeira Carta Venceu!                    \n\n"              );
+            printf("+-------------------------------------------------------------------+\n"                );
+
+        } else if(superPoderX == superPoderY){
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                               Empate!                             \n\n"    );
+            printf("+-------------------------------------------------------------------+\n"                );
+        } else {  
+            printf("+-------------------------------------------------------------------+\n"                );
+            printf("                 Parabéns, segunda Carta Venceu!                    \n\n"               );
             printf("+-------------------------------------------------------------------+\n"                );
         }
 
