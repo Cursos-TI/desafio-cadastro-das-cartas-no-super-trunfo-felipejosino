@@ -169,7 +169,6 @@ int main() {
 
     printf("\n");
 
-    printf("+---------------------------------------------------------------------+\n"               );
     printf("+--------------------Primeiro Atributo de comparação------------------+\n"               );
     printf("+---------------------------------------------------------------------+\n"               );
 
@@ -186,7 +185,6 @@ int main() {
         printf("|População                      :| %ld                               \n\n", populacaoX  );
         printf("+-------------------------------------------------------------------+\n"                );
 
-        printf("+-------------------------------------------------------------------+\n"                );
         printf("               Dados da Segunda Carta para comparação                \n"                 );
         printf("+-------------------------------------------------------------------+\n"                );
         printf("|Nome da cidade                 :| %s                                \n", nomeCidadeY    );
@@ -254,10 +252,10 @@ int main() {
         printf("+-------------------------------------------------------------------+\n"                );
 
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("               Dados da Segunda Carta para comparação                \n"                           );
+        printf("               Dados da Segunda Carta para comparação                \n"                );
         printf("+-------------------------------------------------------------------+\n"                );
-        printf("|Nome da cidade                 :| %s                      \n", densidadePopulacionalY   );
-        printf("|Densidade Populacional         :| %.2lf                   \n", areaY                    );
+        printf("|Nome da cidade                 :| %s                      \n", nomeCidadeY             );
+        printf("|Densidade Populacional         :| %.2lf                   \n", densidadePopulacionalY  );
         printf("+-------------------------------------------------------------------+\n"                );
 
         if(densidadePopulacionalX < densidadePopulacionalY){ 
@@ -415,7 +413,6 @@ int main() {
         break;
     }
 
-    printf("+---------------------------------------------------------------------+\n"               );
     printf("+--------------------Segundo Atributo de comparação-------------------+\n"               );
     printf("+---------------------------------------------------------------------+\n"               );
 
